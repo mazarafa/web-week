@@ -3,6 +3,6 @@
     {
         public function index()
         {
-            echo 'Home';
+            //echo 'Home';
         }
     }
