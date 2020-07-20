@@ -1,4 +1,4 @@
--- ===== Nome do banco 'week'; =======
+-- ===== Nome do banco 'week' ucs2_general_ci; =======
 
 DROP TABLE IF EXISTS `postagem`;
 CREATE TABLE `postagem` (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `comentario` (
   `id` INTEGER AUTO_INCREMENT PRIMARY KEY,  
   `nome` VARCHAR(50) NOT NULL,
   `mensagem` TEXT NOT NULL,
-  `idPostagem` int(11),
+  `idPostagem` INTEGER,
 
   FOREIGN KEY (idPostagem) REFERENCES postagem(id) 
 );
